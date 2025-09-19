@@ -104,9 +104,21 @@ nav ul li:hover {
 
 .donate-btn:hover {
     background-color: black; 
-    
     transition: 0.5s;
 }
+
+.btn i {
+    font-size: 1.3rem;
+    padding: 20px;
+    color: black;
+}
+
+.btn i:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s;
+}  
+
 
 /* Donation window */
 .donation-window {
@@ -145,6 +157,12 @@ nav ul li:hover {
     transition: 1s;
 }
 
+.adopt-btn:hover {
+    background-color: var(--primary-color); 
+    transition: 0.5s;
+}
+
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
@@ -157,7 +175,7 @@ nav ul li:hover {
     margin-right: 90px;
 }
 
-.btn-2 {
+.btn-2, adopt-btn {
     display: inline-block;
     padding: 15px 30px;
     background: black;
@@ -577,4 +595,5 @@ footer .container{
     .story-text h3, .story-text p {
         text-align: center;
     }
+
 }
