@@ -9,9 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </style>
 </head>
 <body>
@@ -59,7 +58,7 @@
 
     <!-- Hero section -->
       <section class="hero" id="home">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <h1 >Nurturing Hopes,Building Families</h1>
             <p>One act of kindness can change a child's whole world...</p>
             <a href="#" class="btn-2">Donate Now</a>
@@ -70,10 +69,10 @@
     <!-- About Us -->
     <section class="about" id="about">
         <div class="abt-container">
-            <h2>About Us</h2>
-            <img src="./assets/aboutus.png" alt="about-us" class="about-img">
-            <p>Adopt-a-Need is a non-profit organization dedicated to connecting donors with children in need of support and care. Our mission is to provide a loving and nurturing environment for children who are waiting for adoption, ensuring they have the resources and opportunities they deserve.</p>
-            <a href="#" class="btn-3">Learn More</a>
+            <h2 data-aos="fade-right" data-aos-duration="1000">About Us</h2>
+            <img src="./assets/aboutus.png" alt="about-us" class="about-img" data-aos="fade-right" data-aos-duration="1000">
+            <p data-aos="fade-right" data-aos-duration="1000">Adopt-a-Need is a non-profit organization dedicated to connecting donors with children in need of support and care. Our mission is to provide a loving and nurturing environment for children who are waiting for adoption, ensuring they have the resources and opportunities they deserve.</p>
+            <a href="#" class="btn-3" data-aos="fade-right" data-aos-duration="1000">Learn More</a>
         </div>
     </section>
 
@@ -91,17 +90,17 @@
         <div class="container">
             <h2>Our Services</h2>
             <div class="service-grid">
-                <div class="service-item">
+                <div class="service-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/service1.jpg" alt="Service 1">
                     <h3>Volunteer Scheduling System</h3>
                     <p>Easily manage your time and sign up for activities that fit your schedule. Our system makes volunteering simple, organized, and impactful.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/service2.jpg" alt="Service 2">
                     <h3>Matchmaking</h3>
                     <p>We connect caring individuals and families with children in need, creating meaningful bonds and brighter futures.</p>
                 </div>
-                <div class="service-item">
+                <div class="service-item" data-aos="flip-left" data-aos-duration="1000">
                     <img src="./assets/service3.jpg" alt="Service 3">
                     <h3>Targeted Donations</h3>
                     <p>Your support goes exactly where it's needed most. Choose specific causes—like education, healthcare, or nutrition—to make your contribution more personal and effective.</p>
@@ -169,7 +168,7 @@
                 <div class="footer-social">
                     <h3>Follow Us</h3>
                     <ul>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
@@ -187,6 +186,11 @@
             </div>
         </div>
     </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            once: true,
+        });
+      </script>
 </body>
-
 </html>
