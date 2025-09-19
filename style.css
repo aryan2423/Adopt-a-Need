@@ -14,27 +14,15 @@ body{
     --primary-color: #ff8000;
     --accent-01: #2FF3E0;
     --accent-02: #1F3960;
-    --accent-03: #E09D60;
+    --accent-03: #c2dded;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     justify-content: center;
     text-align: center;
-    background-color: var(--accent-02);
+   
     height: 100vh;
     color: var(--accent-01);
-}
-
-@keyframes fadeUUP {
-    from {
-        opacity: 0;
-        transform: translateY(10px) scale(0.5);
-    }
-
-    to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
 }
 
 /* Section */
@@ -119,7 +107,6 @@ nav ul li:hover {
     transition: 0.3s;
 }  
 
-
 /* Donation window */
 .donation-window {
     display: none;
@@ -153,8 +140,7 @@ nav ul li:hover {
 
 .btn-2:hover {
     background-color: var(--primary-color); 
-    font-size: 1.1rem;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .adopt-btn:hover {
@@ -175,7 +161,7 @@ nav ul li:hover {
     margin-right: 90px;
 }
 
-.btn-2, adopt-btn {
+.btn-2, .adopt-btn {
     display: inline-block;
     padding: 15px 30px;
     background: black;
@@ -185,6 +171,7 @@ nav ul li:hover {
     font-weight: bold;
     border: none;
     cursor: pointer;
+    margin-right: 15px;
 }
 
  /* About */
@@ -217,9 +204,6 @@ nav ul li:hover {
     padding: 0 20px;
     text-align: center;
     padding: 0 250px;
-
-    animation: fadeUUP both;
-    animation-timeline: view(10% auto);
 }
 
 .abt-container .btn-3 {
@@ -240,15 +224,11 @@ nav ul li:hover {
 
 .abt-container .btn-3:hover {
     background-color: var(--primary-color); 
-    font-size: 1.1rem;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .about-img{
     height: 200px;
-
-    animation: fadeUUP both;
-    animation-timeline: view(10% auto);
 }
 
 /* Value Section */
@@ -290,21 +270,29 @@ nav ul li:hover {
 
 /* Service section */
 
+.services{
+    background-color: #fce5d4;
+}
+
 .services .container{
     padding: 20px;
     border-radius: 15px;
     height: 600px;
     gap: 20px;
-    margin-top: 20px;
 }
 
 .services h2{
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: orange;
+    color: black;
+}
+
+.services h3{
+    color: black;
 }
 
 .services p{
+    text-align: justify;
     font-size: 1.2rem;
     line-height: 1.6;
     color: white;
@@ -318,7 +306,7 @@ nav ul li:hover {
     height: 400px;
     padding: 10px;
     margin: 10px;
-    background-color: #008f9f;
+    background-color: #f5976c;
     transition-property: all;
     transition-duration: 0.3s;
 }
@@ -348,7 +336,6 @@ nav ul li:hover {
     padding: 20px;
     height: 700px;
     gap: 20px;
-    margin-top: 20px;
     background-color: var(--accent-03);
 }
 
@@ -361,7 +348,7 @@ nav ul li:hover {
 .stories h3{
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: white;
+    color: black;
 }
 
 .stories p{
@@ -373,7 +360,7 @@ nav ul li:hover {
 }
 
 .story-item{
-    background-color: #946545;
+    background-color: #73abc7;
     border-radius: 25px;
     width: 500px;
     padding: 10px;
@@ -564,6 +551,11 @@ footer .container{
     transition: background-color 0.3s ease;
 }
 
+.subscribe-btn:hover {
+    background-color: black; 
+    transition: 0.5s;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .hero h1 {
@@ -595,5 +587,4 @@ footer .container{
     .story-text h3, .story-text p {
         text-align: center;
     }
-
 }
